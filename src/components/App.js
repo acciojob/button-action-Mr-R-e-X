@@ -8,14 +8,12 @@ const App = (props) => {
   }
   return (
     <div className="App" id="main">
-      {data ? (
-        <p id="para">
-          "Hello, I've learnt to use the full-stack evaluation tool. This makes
-          me so happy
-        </p>
-      ) : (
-        ""
-      )}
+      <p id="para">
+        {data
+          ? "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+          : ""}
+      </p>
+
       <button id="click" onClick={() => changeData()}>
         {data ? "hide" : "show"}
       </button>
