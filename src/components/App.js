@@ -14,7 +14,7 @@ const App = (props) => {
           : ""}
       </p>
 
-      <button id="click" onClick={() => changeData()}>
+      <button id="para" onClick={() => changeData()}>
         {data ? "hide" : "show"}
       </button>
     </div>
