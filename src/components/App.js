@@ -8,13 +8,17 @@ const App = (props) => {
   }
   return (
     <div className="App" id="main">
-      <p id="para">
+      <p id="para" className={data ? "hide" : "show"}>
         {data
           ? "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
           : ""}
       </p>
 
-      <button id="para" onClick={() => changeData()}>
+      <button
+        id="click"
+        onClick={() => changeData()}
+        className={data ? "hide" : "show"}
+      >
         {data ? "hide" : "show"}
       </button>
     </div>
